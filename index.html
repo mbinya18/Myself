@@ -17,6 +17,13 @@
   </head>
   <body>
     <style>
+       .icon-bg-purple {
+    background-color: rgb(164, 102, 223);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 28px;
+  }
       .color1 {
         background-color: whitesmoke;
       }
@@ -28,6 +35,9 @@
       }
       .color-white {
         background-color: white;
+      }
+      .color4{
+        color:rgb(164, 102, 223)
       }
       .subhead {
         font-size: 70px;
@@ -76,11 +86,7 @@
         color: blueviolet;
       }
       .socials {
-        border-radius: 2px;
-        border: none;
-        bottom: 70;
-        left: 35%;
-        transform: translateX(-50%);
+        
       }
       .project-idea {
         color: white;
@@ -91,11 +97,36 @@
       .profession{
         border-radius: 10px;
       }
-      
+      .discuss-your-project{
+        border-radius: 15px;
+      }
+      .discuss-your-project-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .happy-client-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .products-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .project-idea-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .contact{
+        border-radius: 10px;
+        background-color: rgb(164, 102, 223);
+        color: white;
+        font-size: 20px;
+      }
+     
     </style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Grace</a>
+        <a class="navbar-brand px-5" href="index.html">Grace</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -108,18 +139,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active px-5" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link px-5" href="#profession-content">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5" href="#my-projects">Projects</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-success" type="submit">
+          <form class="d-flex"> 
+            <a href="#discuss-your-project"><button class="btn contact" >
               Contact
-            </button>
+            </button></a>
           </form>
         </div>
       </div>
@@ -137,7 +171,7 @@
             sapiente sequi omnis aliquam. Vero iste blanditiis recusandae magni
             quis voluptas placeat. Id, porro.
           </p>
-          <button class="say-hello">Say Hello</button>
+          <a href="#discuss-your-project"><button class="say-hello">Say Hello</button></a>
           <div class="mt-3 row mx-auto">
             <div class="experience color2 col-lg-2 m-3 mx-auto text-center">
               1year
@@ -161,13 +195,10 @@
         <div class="row">
           <div class="img2 col-lg p-5 d-none d-lg-block position-relative z-1">
             <img src="mbinya2.png" alt="" width="300px" class="color1" />
-            <div class="socials col-lg-6 mx-auto position-absolute z-5">
-              <a href="#"><i class="fa-brands fa-github px-5"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin px-5"></i></a>
-            </div>
+            
           </div>
 
-          <div class="profession-content col-lg mx-auto text-center px-5">
+          <div class="profession-content col-lg mx-auto text-center px-5" id="profession-content">
             <p class="subhead-2">
               I am a Professional<br />
               Frontend developer.
@@ -184,14 +215,18 @@
             <button class="cv">
               <i class="fa-regular fa-circle-down px-2"></i>Download CV
             </button>
+            
           </div>
+          
         </div>
+        
       </div>
+      
     </div>
 
     <div class="container-fluid my-5">
-      <div class="products-intro">
-        <p>Some of the products</p>
+      <div class="products-intro text-center">
+        <p class="products-head">Some of My Projects</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           earum, dicta velit officiis optio corrupti quo numquam voluptatibus
@@ -255,52 +290,51 @@
     </div>
 
     <div class="project-idea container-fluid color3 ">
-      <div class="col-lg-6 mx-auto text-center">
-        <p>Do you have a project idea</p>
+      <div class="col-lg-6 mx-auto text-center py-5">
+        <p class="project-idea-head">Do you have a project idea</p>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eos
           fuga reiciendis inventore velit consectetur quisquam, ipsam molestias
           earum aspernatur distinctio, eveniet aperiam suscipit consequuntur nam
           nobis obcaecati nihil! Animi.
         </p>
-        <button class="my-projects">Let's Work Together</button>
+        <a href="#discuss-your-project"><button class="my-projects">Let's Work Together</button></a>
       </div>
     </div>
-    <div class="container-fluid color1">
-        <div class="col-lg-8 mx-auto text-center"> <p>Happy Clients</p>
+    <div class="container-fluid color1 py-5">
+        <div class="col-lg-8 mx-auto text-center"> <p class="happy-client-head">Happy Clients</p>
         <p>Lorem ipsum dolor, sit amet consectetur 
             adipisicing elit. Animi blanditiis 
             voluptatibus placeat distinctio ullam odio,
              minima autem earum doloribus sint.</p></div>
-        <div class="clients row mx-5">
-            <div class="col-lg">Gleamlight</div>
-            <div class="col-lg">Gleamlight</div>
-            <div class="col-lg">Gleamlight</div>
-            <div class="col-lg">Gleamlight</div>
+        <div class="clients row mx-5 py-5 text-center">
+            <div class="col-lg fw-bold">Gleamlight</div>
+            <div class="col-lg fw-bold">ImaniPlus</div>
+            <div class="col-lg fw-bold">Intelli Uni</div>
 
         </div>
-        <div class="container col-lg-12 color-white">
+        <div class="container discuss-your-project col-lg-12 color-white py-5 px-5">
             <div class="row">
                 <div class="col">
-                    <p>Let's discuss your Project</p>
+                    <p class="discuss-your-project-head" id="discuss-your-project">Let's discuss your Project</p>
                     <p>Lorem ipsum dolor sit amet 
                         consectetur adipisicing elit. 
                         Assumenda inventore quibusdam neque amet ut vitae 
                         itaque tenetur debitis nostrum ducimus.</p>
                         <div class="row address">
-                            <div class="col-lg-1">location</div>
-                            <div class="col-lg-1"><p>Address</p>
-                            <p>Nairobi</p></div>
+                            <div class="col-lg-1"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="col-lg-4"><p>Location:</p>
+                            <p class="fw-bold">Nairobi, Kenya</p></div>
                         </div>
                         <div class="row address">
-                            <div class="col-lg-1">location</div>
-                            <div class="col-lg-1"><p>Address</p>
-                            <p>Nairobi</p></div>
+                            <div class="col-lg-1"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="col-lg-1"><p>Email:</p>
+                            <p class="fw-bold"><a href="mailto:mbinyaapril18@gmail.com" class="text-decoration-none text-black">mbinyaapril18@gmail.com</a></p></div>
                         </div>
                         <div class="row address">
-                            <div class="col-lg-1">location</div>
-                            <div class="col-lg-1"><p>Address</p>
-                            <p>Nairobi</p></div>
+                            <div class="col-lg-1"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="col-lg-1"><p>Phone:</p>
+                            <p class="fw-bold"><a href="tel:+254714443705" class="text-decoration-none text-black">+254714443705</a></p></div>
                         </div>
                 </div>
                 <div class="col">
@@ -309,26 +343,26 @@
                          praesentium soluta 
                         aliquam assumenda cum rem non et harum!</p>
                         <form>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="form-group py-2">
+                                <label for="exampleInputPassword1" class="color4 fw-bold">Name<span class="color4">*</span></label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name" required>
                               </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
+                            <div class="form-group py-2">
+                              <label for="exampleInputEmail1" class="color4 fw-bold">Enter Your Email address<span class="color4">*</span></label>
                               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Subject</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="form-group py-2">
+                                <label for="exampleInputPassword1" class="color4 fw-bold">Subject</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="What is the Topic?">
                               </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="form-group py-2">
+                                <label for="exampleFormControlTextarea1" class="color4 fw-bold">Message<span class="color4">*</span></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell me about it."></textarea>
                               </div>
                             
                               
-                            <button type="submit" class="btn my-projects">Submit</button>
+                            <button type="submit" class="btn my-projects my-2 text-white">Submit</button>
                           </form>
                 </div>
             </div>
@@ -338,16 +372,24 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer color3 py-5">
         <div class="col-lg-8 mx-auto text-center footer-links">
             <div class="row footer-links">
-                <div class="col "><a href="">Home</a></div>
-                <div class="col"><a href="">About</a></div>
-                <div class="col"><a href="">Products</a></div>
+              <div class="col "><a href="index.html" class="text-decoration-none text-white">Mbinya</a></div>
+              <div class="col "><a href="index.html" class="text-decoration-none text-white">Home</a></div>
+                <div class="col"><a href="#profession-content" class="text-decoration-none text-white">About</a></div>
+                <div class="col"><a href="#my-projects" class="text-decoration-none text-white">Products</a></div>
+                <div class=" col">
+          
+                  <a href="#"><i class="fa-brands fa-github  fa-2x icon-bg-purple"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x icon-bg-purple"></i></a>
+                
+              </div>
             </div>
         </div>
-        <div class="copyrigt"> Copyright &copy; <span id="copyright-year"></span> Grace Carol</div>
-    </div>
+        
+        <div class="copyrigt text-white text-center py-5"> Copyright &copy; <span id="copyright-year"></span> Grace Carol</div>
+       </div>
     <script>
         const currentYear = new Date().getFullYear();
         document.getElementById("copyright-year").textContent = currentYear;
