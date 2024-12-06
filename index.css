@@ -1,0 +1,106 @@
+.icon-bg-purple {
+    background-color: rgb(164, 102, 223);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 28px;
+  }
+      .color1 {
+        background-color: whitesmoke;
+      }
+      .color2 {
+        background-color: rgb(164, 102, 223);
+      }
+      .color3 {
+        background-color: rgb(13, 13, 37);
+      }
+      .color-white {
+        background-color: white;
+      }
+      .color4{
+        color:rgb(164, 102, 223)
+      }
+      .subhead {
+        font-size: 70px;
+        font-weight: 600;
+        font-family: monospace;
+      }
+      .say-hello {
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 4px;
+        font-size: 20px;
+      }
+      .experience {
+        border: none;
+        border-radius: 5px;
+      }
+      .grace-img {
+        border: none;
+        border-radius: 10px;
+      }
+      .img2 {
+        border: none;
+        border-radius: 5px;
+      }
+      .subhead-2 {
+        font-family: monospace;
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 120px;
+      }
+      .my-projects {
+        border: none;
+        border-radius: 3px;
+        background-color: blueviolet;
+        padding: 10px;
+      }
+      .my-projects a {
+        text-decoration: none;
+        color: white;
+      }
+      .cv {
+        border: 2px solid blueviolet;
+        border-radius: 3px;
+        padding: 9px;
+        color: blueviolet;
+      }
+      .socials {
+        
+      }
+      .project-idea {
+        color: white;
+      }
+      .footer-links{
+        text-decoration: none;
+      }
+      .profession{
+        border-radius: 10px;
+      }
+      .discuss-your-project{
+        border-radius: 15px;
+      }
+      .discuss-your-project-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .happy-client-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .products-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .project-idea-head{
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .contact{
+        border-radius: 10px;
+        background-color: rgb(164, 102, 223);
+        color: white;
+        font-size: 20px;
+      }
+     
